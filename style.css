@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "inter", sans-serif;
+}
+
+body{
+    margin: 0 10%;
+    background-color: white;
+    max-width: 1440px;
+    min-width: 375px;
+}
+
+:root{
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+p{
+    font-size: 15px;
+}
+
+/* End of config */
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+.nav-link{
+    color: var(--dark-grayish-blue);
+}
+
+.nav-link:hover{
+    color: var(--soft-red);
+}
+
+nav:nth-child(3){
+    display: none;
+}
+
+ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-section{
+    width: 64%;
+}
+
+.new{
+    width: 33%;
+    background-color: var(--Very-dark-blue);
+    padding: 2%;
+    margin: 0%;
+    padding-top: 1%;
+    height: 65vh;
+}
+
+
+.logo{
+    width: 3rem;
+}
+
+.hero-image-container{
+    width: 100%;
+}
+.hero-image-container img{
+    width: 100%;
+}
+.hero-image-container :nth-child(2){
+    display: none;
+}
+.new h1{
+    color: var(--soft-orange);
+    align-items: center;
+}
+
+.new h2{
+    color: var(--Off-white);
+}
+
+.new h2:hover{
+    color: var(--soft-orange);
+}
+
+.hero-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bright{
+    width: 50%;
+    font-size: 1.8em;
+    justify-content: space-between;
+}
+.readmore{
+    width: 45%;
+    /* padding: 0% 10%; */
+}
+
+.readmore p{
+    display: flex;
+    flex-direction: column;
+}
+
+.downsides h2{
+    color: var(--Off-white);
+}
+
+
+.downsides h2:hover{
+    color: var(--soft-orange)
+}
+
+.funding h3{
+    color: var(--Off-white);
+}
+
+.funding p{
+    color: var(--Off-white);
+}
+
+.funding h3:hover{
+    color: var(--soft-orange)
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.footer-card{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card img{
+    width: 28%;
+}
+
+.card-content{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-content h2{
+    color: var(--grayish-blue);
+}
+.card-content h3{
+    color: var(--very-dark-blue);
+    font-size: 0.9rem;
+}
+.card-content p{
+    color: var(--dark-grayish-blue);
+    font-size: 0.7rem;
+}
+
+.button{
+    background-color: var(--soft-red);
+    color: white;
+    padding: 0 0 5% 5%;
+    margin: 0% 0%;
+    align-items: center;
+}
+
+.button a:hover{
+    background-color: var(--Dark-grayish-blue);
+}
+
+
+/* Media Query */
+/* Mobile devices 678px and below */
+@media (max-width: 678px){
+body{
+    margin: 0 10%;
+}
+
+nav, main{
+    width: 100%;
+}
+nav ul{
+    display: none;
+}
+nav :nth-child(3){
+    display: block;
+}
+
+.hero-image-container :nth-child(1){
+    display: none;
+}
+.hero-image-container :nth-child(2){
+    display: block;
+}
+main, .hero-content, footer{
+    flex-direction: column;
+}
+.hero-image-container img{
+    width: 100%;
+}
+.hero-section, .new, .bright, .readmore{
+    width: 100%;
+}
+.bright h1{
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* .hero-content{
+    height: 44vh;
+} */
+.readmore{
+    height: 20vh;
+}
+.readmore a{
+    padding: 10px 10px;
+}
+.new{
+    height: 50vh;
+    margin-top: 2rem;
+    padding: 0 4%;
+    margin-bottom: 2rem;
+}
+.new-content p{
+    font-size: 1rem;
+}
+.new-content h3{
+    font-size: 1.2rem;
+}
+
+footer{
+    height: 52vh;
+    margin-bottom: 1rem;
+}
+.footer-card{
+    width: 100%;
+}
+}
